@@ -1,0 +1,125 @@
+/*---RESET----*/
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+button{
+    border: initial;
+    background-color: initial;
+    color: inherit;
+    font: inherit;
+    outline: none;  /* no indicator for tab outline */
+    
+}
+/*---BASE STYLES----*/
+.app{
+    color: #fff;
+    background-color: rgba(75, 9, 9, 0.795);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    
+}
+/*---STYLES----*/
+.container-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav{
+  margin-top: 23px;
+  background-image: rgba(4, 14, 43, 0.918);
+  height: 10vh;
+  min-width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  box-shadow: 1px 0px 50px 2px  rgba(4, 14, 43, 0.918);
+
+}
+
+.dd-toggle{
+  color: rgba(255,255,255,0.5);
+  padding: 0 13px;
+  cursor: pointer;
+}
+
+
+.dd-toggle:hover,
+.dd-toggle:focus {
+  color: rgba(255,255,255,0.9);
+  background-color: rgba(128, 37, 81, 0.938);
+  box-shadow: 0px -40px 60px 0   rgb(231, 34, 189);
+  opacity: 0.4;
+}
+
+/* -----MAIN-----------*/
+
+.container {
+  margin: 0 10rem;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgba(78, 8, 43, 0.842);
+  box-shadow: 3px 3px 40px 3px rgba(11, 18, 37, 0.678);
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+  padding: 0 10px;
+  font-family: 'potta one','rubik scribble','sans serif';
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+
+.hero {
+  padding: 0 10px;
+  margin: 5px;
+  font-family: 'potta one';
+  font-size: 36px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hero__welcome {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+.hero__details {
+  font-size: 1.4rem;
+  opacity: 1;
+  color: rgba(255,255,255,0.9);
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: rgba(78, 8, 43, 0.842);
+  color: white;
+  opacity: 1;
+  height: 20px;
+}
+
+
+/* -----MEDIA QUERIES-----*/
+
+@media (max-width: 700px) {
+
+  .container{
+    margin: 0;
+  }
+  
+}
