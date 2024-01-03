@@ -1,49 +1,63 @@
 /*---RESET----*/
-*{
-    margin: 0;
-    padding: 0;
-   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-button{
-    border: initial;
-    background-color: initial;
-    color: inherit;
-    font: inherit;
-    outline: none;  /* no indicator for tab outline */
-    
+
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
+
+
+button {
+  border: initial;
+  background-color: initial;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  /* no indicator for tab outline */
+
+}
+
 /*---BASE STYLES----*/
-.app{
-    max-width: 100vw;
-    height: 100vh;
-    color: #fff;
-    background-color: rgba(75, 9, 9, 0.795);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    
+.app {
+  width: 10em;
+  height: 10em;
+  color: #fff;
+  background-color: rgba(136, 25, 25, 0.836);
+
+
+
 }
+
 /*---STYLES----*/
 .container-nav {
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  row-gap: 30px;
 }
 
-.nav{
-  width: 100vw;
-  margin-top: 23px;
+.nav {
+  color: white;
+  width: 40em;
   background-image: rgba(4, 14, 43, 0.918);
   height: 10vh;
   display: flex;
   justify-content: space-around;
-  box-shadow: 1px 0px 50px 2px  rgba(4, 14, 43, 0.918);
+  box-shadow: 1px 0px 50px 2px rgba(4, 14, 43, 0.918);
 
 }
 
-.dd-toggle{
-  color: rgba(255,255,255,0.5);
+.dd-toggle {
+  color: rgba(255, 255, 255, 0.5);
   padding: 0 13px;
   cursor: pointer;
 }
@@ -51,31 +65,20 @@ button{
 
 .dd-toggle:hover,
 .dd-toggle:focus {
-  color: rgba(255,255,255,0.9);
-  background-color: rgba(128, 37, 81, 0.938);
-  box-shadow: 0px -40px 60px 0   rgb(231, 34, 189);
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 0, 200, 0.938);
+  box-shadow: 0px -40px 60px 0 rgb(198, 248, 237);
   opacity: 0.4;
 }
 
 /* -----MAIN-----------*/
-
-.hero {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  background-color: rgba(78, 8, 43, 0.842);
-  box-shadow: 3px 3px 40px 3px rgba(11, 18, 37, 0.678);
-}
 
 .title {
   display: flex;
   justify-content: space-around;
   column-gap: 10px;
   padding: 0 10px;
-  font-family: 'potta one','rubik scribble','sans serif';
+  font-family: 'potta one', 'rubik scribble', 'sans serif';
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
@@ -91,6 +94,8 @@ button{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-color: rgba(63, 6, 30, 0.322);
+  box-shadow: 3px 3px 40px 3px rgba(11, 18, 37, 0.678);
 }
 
 .hero__welcome {
@@ -103,7 +108,7 @@ button{
 .hero__details {
   font-size: 1.4rem;
   opacity: 1;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .btn {
@@ -117,37 +122,49 @@ button{
 
 /* -----MEDIA QUERIES-----*/
 
-@media (max-width: 4460px) {
-  .nav {
-    margin: 0 20rem;
-    font-size: 3rem;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    margin: 0 4rem;
-  }
+@media (max-width: 1400px) {
 
   .title {
     flex-direction: column;
     align-items: space-between;
+  }
 
+  .hero {
+    margin: 0 5rem;
+  }
+
+  .nav {
+    margin: 0 40
+  }
+}
+
+@media (max-width: 743px) {
+  .app {
+    width: 100%;
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .nav {
+    width: 100vw;
+    margin: 0 5rem;
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 460px) {
-  .nav {
-    font-size: 2rem;
-  }
-  .container {
-    color: rgba(251, 255, 0, 0.795);
-    height: 90vh;
-  }
 
   .title {
     flex-direction: column;
     align-items: space-between;
-
   }
+
+  .nav {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
 }
