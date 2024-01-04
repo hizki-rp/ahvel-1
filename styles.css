@@ -28,8 +28,8 @@ button {
 .app {
   width: 10em;
   height: 10em;
-  color: #fff;
-  background-color: rgba(136, 25, 25, 0.836);
+  color: #ffffffb2;
+  background-color: hsl(0, 0%, 7%);
 
 
 
@@ -48,7 +48,7 @@ button {
 .nav {
   color: white;
   width: 40em;
-  background-image: rgba(4, 14, 43, 0.918);
+  background-image: rgb(25, 81, 248);
   height: 10vh;
   display: flex;
   justify-content: space-around;
@@ -60,28 +60,38 @@ button {
   color: rgba(255, 255, 255, 0.5);
   padding: 0 13px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 
 .dd-toggle:hover,
 .dd-toggle:focus {
   color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(255, 0, 200, 0.938);
-  box-shadow: 0px -40px 60px 0 rgb(198, 248, 237);
+  background-color: rgba(0, 255, 255, 0.068);
+  box-shadow: 0 -20px 60px 2px cyan;
   opacity: 0.4;
+  border-top: 2px solid cyan;
 }
 
 /* -----MAIN-----------*/
 
 .title {
+  width: 10rem;
+  height: 10rem;
   display: flex;
   justify-content: space-around;
   column-gap: 10px;
-  padding: 0 10px;
+  padding: 1rem 1rem;
   font-family: 'potta one', 'rubik scribble', 'sans serif';
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 15px;
   text-align: center;
+  color: rgb(230, 252, 243);
+  background-image: linear-gradient(to right, rgba(34, 36, 35, 0.188), rgba(0, 255, 149, 0.129));
+  margin-top: 1rem;
+
+  box-shadow: 1px 1px 400px 200px rgba(9, 241, 160, 0.103);
+  border-radius: 10px 100px/120px;
 
 }
 
@@ -94,8 +104,16 @@ button {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: rgba(63, 6, 30, 0.322);
-  box-shadow: 3px 3px 40px 3px rgba(11, 18, 37, 0.678);
+  background-color: hsla(0, 0%, 9%, 0.795);
+
+
+  transform: translateZ(100px);
+  border: 1px solid rgba(0, 255, 255, 0.123);
+  border-left: none;
+  border-right: none;
+  padding-bottom: 4rem;
+  z-index: 10px;
+
 }
 
 .hero__welcome {
@@ -103,17 +121,19 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   text-transform: uppercase;
+  color: rgb(213, 227, 236);
 }
 
 .hero__details {
   font-size: 1.4rem;
   opacity: 1;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(7, 252, 138, 0.9);
+  font-size: 17px;
+  padding-top: 2rem;
 }
 
 .btn {
   font-size: 1rem;
-  background-color: rgba(78, 8, 43, 0.842);
   color: white;
   opacity: 1;
   height: 20px;
@@ -134,6 +154,7 @@ button {
   }
 
   .nav {
+
     margin: 0 40
   }
 }
@@ -151,7 +172,7 @@ button {
   .nav {
     width: 100vw;
     margin: 0 5rem;
-    font-size: 1.6rem;
+    font-size: 17px;
   }
 }
 
