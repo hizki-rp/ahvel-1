@@ -31,8 +31,6 @@ button {
   color: #ffffffb2;
   background-color: hsl(0, 0%, 7%);
 
-
-
 }
 
 /*---STYLES----*/
@@ -48,7 +46,7 @@ button {
 .nav {
   color: white;
   width: 40em;
-  background-image: rgb(25, 81, 248);
+  background-color: hsl(0, 0%, 7%);
   height: 10vh;
   display: flex;
   justify-content: space-around;
@@ -84,7 +82,7 @@ button {
   padding: 1rem 1rem;
   font-family: 'potta one', 'rubik scribble', 'sans serif';
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 8px;
   text-align: center;
   color: rgb(230, 252, 243);
   background-image: linear-gradient(to right, rgba(34, 36, 35, 0.188), rgba(0, 255, 149, 0.129));
@@ -99,7 +97,6 @@ button {
 .hero {
   padding: 0 10px;
   margin: 5px;
-  font-family: 'potta one';
   font-size: 36px;
   display: flex;
   justify-content: space-around;
@@ -117,6 +114,7 @@ button {
 }
 
 .hero__welcome {
+  font-family: 'potta one';
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -125,6 +123,7 @@ button {
 }
 
 .hero__details {
+  font-family: sans-serif;
   font-size: 1.4rem;
   opacity: 1;
   color: rgba(7, 252, 138, 0.9);
@@ -137,6 +136,11 @@ button {
   color: white;
   opacity: 1;
   height: 20px;
+}
+
+.learn {
+  display: flex;
+  justify-content: space-around;
 }
 
 
